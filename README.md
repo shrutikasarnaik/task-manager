@@ -36,9 +36,3 @@ A simple Task Manager web application built using HTML, CSS, and JavaScript.
 
 
 
-\## Author
-
-Shrutika Sarnaik
-
-
-
