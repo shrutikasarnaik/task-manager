@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <h2>Student Task Manager</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            // 1. Get input value
+            let taskText = document.getElementById("taskInput").value;
+
+            // 2. Check if empty
+            if (taskText === "") {
+                alert("Please enter a task");
+                return;
+            }
+
+            // 3. Create new list item
+            let li = document.createElement("li");
+            li.textContent = taskText;
+
+            // 4. Add it to list
+            document.getElementById("taskList").appendChild(li);
+
+            // 5. Clear input box
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+
+</body>
+</html>
